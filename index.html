@@ -3,21 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Websku Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Websku Portofolio - websku.herokuapp.com</title>
   </head>
-  <body>
-    <p>websku version 0.0.1</p>
-    <p>create by:ffadelm</p>
 
-      <div class= "container">
-          <h1>Login</h1>
-          <form>
-              <label>Email</label><br>
-              <input type="text"><br>
-              <label>Password</label><br>
-              <input type="password"><br>
-              <button>Masuk</button>
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section">HOME</a>
+      <a href="#main">PROJECTS</a>
+      <a href="#footer">CONTACT</a>
+    </nav>
+
+    <header id="welcome-section">
+      <h1>Hi I'm Faysal Fadel Maulana</h1>
+      <p>a student at University of Muhammadiyah Yogyakarta</p>
+    </header>
+
+    <main id="main">
+      <section id="projects">
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img1.jpg" /></a>
+          <div>project1</div>
+        </div>
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img2.png" /></a>
+          <div>project2</div>
+        </div>
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img3.png" /></a>
+          <div>project3</div>
+        </div>
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img4.jpg" /></a>
+          <div>project4</div>
+        </div>
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img5.jpg" /></a>
+          <div>project5</div>
+        </div>
+        <div class="project-title">
+          <a href="#" target="_blank"><img src="img/img6.jpg" /></a>
+          <div>project6</div>
+        </div>
+      </section>
+
+      <button>
+        <a href="http://websku.herokuapp.com/" target="_blank"
+          >More Projects >></a
+        >
+      </button>
+    </main>
+
+    <footer id="footer">
+      <div>
+        <a id="profile-link" href="#" target="_blank"
+          ><img src="img/fb.png" width="150px"
+        /></a>
+        <p>Facebook Profile</p>
       </div>
+      <div>
+        <a href="#" target="_blank"><img src="img/ig.png" width="150px" /></a>
+        <p>Instagram Profile</p>
+      </div>
+      <div>
+        <a href="#" target="_blank"><img src="img/pin.png" width="220px" /></a>
+        <p>Pinterest Profile</p>
+      </div>
+      <div>
+        <a href="#" target="_blank"><img src="img/in.png" width="175px" /></a>
+        <p>LinkedIn Profile</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const projectName = "portfolio";
+      localStorage.setItem("example_project", "Personal Portfolio");
+    </script>
   </body>
 </html>
